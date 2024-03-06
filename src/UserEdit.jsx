@@ -41,7 +41,7 @@ const UserEdit = () => {
         }
         const updatedUsers = users.map(u => (u.id === parseInt(id) ? updatedUser : u));
         setUsers(updatedUsers);
-        // navigate('/');
+        navigate('/');
         console.log(updatedUsers);
       } catch (error) {
         console.error("Error updating user", error);
